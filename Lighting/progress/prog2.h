@@ -18,9 +18,15 @@ public: // examples
     void colors(); // 1
     void basicLighting();
 
+    void materials();
+
 public: // practices
+    void moveLightSourceUsingSinOrCos();
+    void playAroundThe3Lighting_Ambient_Diffuse_Specular();
+    void doShadingInViewSpaceInsteadOfWorldSpace();
+    void implementGouraudShading(); // basically a phone shading that is implemented in the vertex shader or .vert
 
-
+    void changeLightSourceColor();
 private:
     prog2(const prog2&) = delete;
     prog2& operator=(const prog2&) = delete;

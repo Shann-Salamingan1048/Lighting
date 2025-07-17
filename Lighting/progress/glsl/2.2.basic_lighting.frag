@@ -12,7 +12,7 @@ uniform vec3 lightColor;
 void main()
 {
     // ambient
-    float ambientStrength = 0.1f;
+    float ambientStrength = 0.01f;
     //vec3 ambient = ambientStrength * lightColor * objectColor; 
     vec3 ambient = ambientStrength * lightColor; 
 
@@ -25,7 +25,7 @@ void main()
             
 
     // specular 
-    float specularStrength = 0.5f;
+    float specularStrength = 1.5f;
     vec3 viewDir = normalize(viewPos - FragPos);
     vec3 reflectDir = reflect(-lightDir, norm);  
     float shininess = 32.0f;
