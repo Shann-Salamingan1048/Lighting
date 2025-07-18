@@ -10,8 +10,9 @@ int main()
 	//p2.doShadingInViewSpaceInsteadOfWorldSpace();
 	//p2.implementGouraudShading();
 	//p2.materials();
-	p2.changeLightSourceColor(); // still has issues in light source. for example the color of the light is green then the cube object is green
-
+	//p2.changeLightSourceColor(); // still has issues in light source. for example the color of the light is green then the cube object is green
+	//p2.simulateRealWorldObjects();
+	p2.lighting_maps();
 	
 	return 0;
 }

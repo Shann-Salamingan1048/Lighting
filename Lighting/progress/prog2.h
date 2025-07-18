@@ -20,6 +20,7 @@ public: // examples
 
     void materials();
 
+    void lighting_maps();
 public: // practices
     void moveLightSourceUsingSinOrCos();
     void playAroundThe3Lighting_Ambient_Diffuse_Specular();
@@ -27,6 +28,7 @@ public: // practices
     void implementGouraudShading(); // basically a phone shading that is implemented in the vertex shader or .vert
 
     void changeLightSourceColor();
+    void simulateRealWorldObjects();
 private:
     prog2(const prog2&) = delete;
     prog2& operator=(const prog2&) = delete;
@@ -46,7 +48,7 @@ private:
 private:
     // defaults
 	constexpr static int m_defaultSize[2] = { 800, 800 }; // Width , Height
-	constexpr static const char* m_defaultTitle = "Solar System";
+	constexpr static const char* m_defaultTitle = "Lighting";
 
 private:
    bool firstMouse = true;

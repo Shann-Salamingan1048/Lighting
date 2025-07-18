@@ -1360,14 +1360,10 @@
     <None Include="Libraries\include\glm\gtx\wrap.inl">
       <Filter>Header Files</Filter>
     </None>
-    <None Include="progress\glsl\1.colors.vert" />
     <None Include="progress\glsl\1.colors.frag" />
-    <None Include="progress\glsl\1.light_cube.vert" />
+    <None Include="progress\glsl\1.colors.vert" />
     <None Include="progress\glsl\1.light_cube.frag" />
-    <None Include="progress\glsl\2.basic_lighting.frag" />
-    <None Include="progress\glsl\2.basic_lighting.vert" />
-    <None Include="progress\glsl\2.light_cube.frag" />
-    <None Include="progress\glsl\2.light_cube.vert" />
+    <None Include="progress\glsl\1.light_cube.vert" />
     <None Include="progress\glsl\2.1.basic_lighting.frag" />
     <None Include="progress\glsl\2.1.basic_lighting.vert" />
     <None Include="progress\glsl\2.1.light_cube.frag" />
@@ -1382,15 +1378,32 @@
     <None Include="progress\glsl\2.3.light_cube.vert" />
     <None Include="progress\glsl\2.4.basic_lighting.frag" />
     <None Include="progress\glsl\2.4.basic_lighting.vert" />
-    <None Include="progress\glsl\2.4.light_cube.frag" />
     <None Include="progress\glsl\2.4.light_cube.vert" />
-    <None Include="progress\glsl\3.light_cube.frag" />
-    <None Include="progress\glsl\3.light_cube.vert" />
-    <None Include="progress\glsl\3.materials.frag" />
-    <None Include="progress\glsl\3.materials.vert" />
-    <None Include="progress\glsl\3.1.light_cube.frag" />
+    <None Include="progress\glsl\2.4.light_cube.frag" />
+    <None Include="progress\glsl\2.basic_lighting.frag" />
+    <None Include="progress\glsl\2.basic_lighting.vert" />
+    <None Include="progress\glsl\2.light_cube.frag" />
+    <None Include="progress\glsl\2.light_cube.vert" />
     <None Include="progress\glsl\3.1.light_cube.vert" />
+    <None Include="progress\glsl\3.1.light_cube.frag" />
     <None Include="progress\glsl\3.1.materials.frag" />
     <None Include="progress\glsl\3.1.materials.vert" />
+    <None Include="progress\glsl\3.2.light_cube.frag" />
+    <None Include="progress\glsl\3.2.light_cube.vert" />
+    <None Include="progress\glsl\3.2.materials.frag" />
+    <None Include="progress\glsl\3.2.materials.vert" />
+    <None Include="progress\glsl\3.light_cube.frag" />
+    <None Include="progress\glsl\3.materials.frag" />
+    <None Include="progress\glsl\3.light_cube.vert" />
+    <None Include="progress\glsl\3.materials.vert" />
+    <None Include="progress\glsl\4.light_cube.vert" />
+    <None Include="progress\glsl\4.light_cube.frag" />
+    <None Include="progress\glsl\4.lighting_maps.frag" />
+    <None Include="progress\glsl\4.lighting_maps.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="progress\images\container2.png">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

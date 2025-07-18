@@ -614,10 +614,21 @@
     <None Include="progress\glsl\3.1.light_cube.vert" />
     <None Include="progress\glsl\3.1.materials.frag" />
     <None Include="progress\glsl\3.1.materials.vert" />
+    <None Include="progress\glsl\3.2.light_cube.frag" />
+    <None Include="progress\glsl\3.2.light_cube.vert" />
+    <None Include="progress\glsl\3.2.materials.frag" />
+    <None Include="progress\glsl\3.2.materials.vert" />
     <None Include="progress\glsl\3.light_cube.frag" />
     <None Include="progress\glsl\3.light_cube.vert" />
     <None Include="progress\glsl\3.materials.frag" />
     <None Include="progress\glsl\3.materials.vert" />
+    <None Include="progress\glsl\4.lighting_maps.frag" />
+    <None Include="progress\glsl\4.lighting_maps.vert" />
+    <None Include="progress\glsl\4.light_cube.frag" />
+    <None Include="progress\glsl\4.light_cube.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="progress\images\container2.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
