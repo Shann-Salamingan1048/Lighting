@@ -21,6 +21,7 @@ public: // examples
     void materials();
 
     void lighting_maps();
+    void specular_maps();
 public: // practices
     void moveLightSourceUsingSinOrCos();
     void playAroundThe3Lighting_Ambient_Diffuse_Specular();
@@ -29,6 +30,11 @@ public: // practices
 
     void changeLightSourceColor();
     void simulateRealWorldObjects();
+
+    void Wood_Metal(); // the metal wont shine and wood will shine
+    void emissionMap();
+public: // experiments
+    void trySpecularMapColored();
 private:
     prog2(const prog2&) = delete;
     prog2& operator=(const prog2&) = delete;

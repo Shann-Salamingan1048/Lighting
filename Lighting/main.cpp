@@ -12,8 +12,11 @@ int main()
 	//p2.materials();
 	//p2.changeLightSourceColor(); // still has issues in light source. for example the color of the light is green then the cube object is green
 	//p2.simulateRealWorldObjects();
-	p2.lighting_maps();
-	
+	//p2.lighting_maps();
+	//p2.specular_maps();
+	//p2.Wood_Metal();
+	//p2.trySpecularMapColored();
+	p2.emissionMap();
 	return 0;
 }
-// 130/523
+// 135/523
