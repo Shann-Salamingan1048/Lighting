@@ -1416,6 +1416,26 @@
     <None Include="progress\glsl\4.4.light_cube.vert" />
     <None Include="progress\glsl\4.4.lighting_maps.frag" />
     <None Include="progress\glsl\4.4.lighting_maps.vert" />
+    <None Include="progress\glsl\5.light_casters.frag" />
+    <None Include="progress\glsl\5.light_casters.vert" />
+    <None Include="progress\glsl\5.light_cube.frag" />
+    <None Include="progress\glsl\5.light_cube.vert" />
+    <None Include="progress\glsl\5.2.light_casters.frag" />
+    <None Include="progress\glsl\5.2.light_casters.vert" />
+    <None Include="progress\glsl\5.2.light_cube.frag" />
+    <None Include="progress\glsl\5.2.light_cube.vert" />
+    <None Include="progress\glsl\5.3.light_cube.vert" />
+    <None Include="progress\glsl\5.3.light_cube.frag" />
+    <None Include="progress\glsl\5.3.light_casters.vert" />
+    <None Include="progress\glsl\5.3.light_casters.frag" />
+    <None Include="progress\glsl\5.4.light_casters.frag" />
+    <None Include="progress\glsl\5.4.light_casters.vert" />
+    <None Include="progress\glsl\5.4.light_cube.frag" />
+    <None Include="progress\glsl\5.4.light_cube.vert" />
+    <None Include="progress\glsl\6.light_cube.frag" />
+    <None Include="progress\glsl\6.light_cube.vert" />
+    <None Include="progress\glsl\6.multiple_lights.frag" />
+    <None Include="progress\glsl\6.multiple_lights.vert" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="progress\images\container2.png">

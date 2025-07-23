@@ -11,7 +11,7 @@ enum Cam_Movement
 
 constexpr static float YAW = -90.0f;
 constexpr static float PITCH = 0.0f;
-constexpr static float SPEED = 2.0f;
+constexpr static float SPEED = 12.0f;
 constexpr static float SENSITIVITY = 0.1f;
 constexpr static float ZOOM = 45.0f;
 

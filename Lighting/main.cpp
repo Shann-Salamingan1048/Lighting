@@ -16,7 +16,13 @@ int main()
 	//p2.specular_maps();
 	//p2.Wood_Metal();
 	//p2.trySpecularMapColored();
-	p2.emissionMap();
+	//p2.emissionMap();
+	//p2.light_caster();
+	//p2.attenuation();
+	//p2.spot();
+	//p2.spot_soft();
+	//p2.multiple_lights();
+	p2.desert_factory_horror_biochemical(themeChoices::BIOCHEMICAL_LAB);
 	return 0;
 }
-// 135/523
+// 153/523

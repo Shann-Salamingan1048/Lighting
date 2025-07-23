@@ -4,8 +4,47 @@
 #include "../frameRate.h"
 #include "../Shader.h"
 #include "../Texture.h"
-
-
+enum themeChoices
+{
+    DESERT = 0,
+    FACTORY = 1,
+    HORROR = 2,
+    BIOCHEMICAL_LAB = 3
+};
+constexpr float theme_Background_color[4][4] =
+{
+    {0.75f, 0.52f, 0.3f, 1.0f},
+    {0.1f, 0.1f, 0.1f, 1.0f},
+    {0.0f, 0.0f, 0.0f, 1.0f},
+    {0.9f, 0.9f, 0.9f, 1.0f}
+};
+constexpr glm::vec3 pointLightColorsChoices[4][4] =
+{
+    {
+        glm::vec3(1.0f, 0.6f, 0.0f),
+        glm::vec3(1.0f, 0.0f, 0.0f),
+        glm::vec3(1.0f, 1.0, 0.0),
+        glm::vec3(0.2f, 0.2f, 1.0f)
+    },
+    {
+        glm::vec3(0.2f, 0.2f, 0.6f),
+        glm::vec3(0.3f, 0.3f, 0.7f),
+        glm::vec3(0.0f, 0.0f, 0.3f),
+        glm::vec3(0.4f, 0.4f, 0.4f)
+    },
+    {
+        glm::vec3(0.1f, 0.1f, 0.1f),
+        glm::vec3(0.1f, 0.1f, 0.1f),
+        glm::vec3(0.1f, 0.1f, 0.1f),
+        glm::vec3(0.3f, 0.1f, 0.1f)
+    },
+    {
+        glm::vec3(0.4f, 0.7f, 0.1f),
+        glm::vec3(0.4f, 0.7f, 0.1f),
+        glm::vec3(0.4f, 0.7f, 0.1f),
+        glm::vec3(0.4f, 0.7f, 0.1f)
+    }
+};
 class prog2
 {
 public:
@@ -22,6 +61,13 @@ public: // examples
 
     void lighting_maps();
     void specular_maps();
+
+    void light_caster();
+    void attenuation();
+    void spot();
+    void spot_soft();
+
+    void multiple_lights();
 public: // practices
     void moveLightSourceUsingSinOrCos();
     void playAroundThe3Lighting_Ambient_Diffuse_Specular();
@@ -33,6 +79,13 @@ public: // practices
 
     void Wood_Metal(); // the metal wont shine and wood will shine
     void emissionMap();
+
+    void desert_factory_horror_biochemical(themeChoices tc);
+    
+    void desert(const Shader& shader, const glm::vec3 pointLightPositions[], const glm::vec3 pointLightColors[]) const;
+    void factory(const Shader& shader, const glm::vec3 pointLightPositions[], const glm::vec3 pointLightColors[]) const;
+    void horror(const Shader& shader, const glm::vec3 pointLightPositions[], const glm::vec3 pointLightColors[]) const;
+    void biochemical(const Shader& shader, const glm::vec3 pointLightPositions[], const glm::vec3 pointLightColors[]) const;
 public: // experiments
     void trySpecularMapColored();
 private:
