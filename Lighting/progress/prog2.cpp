@@ -176,7 +176,6 @@ void prog2::biochemical(const Shader& shader, const glm::vec3 pointLightPosition
 	shader.setFloat("spotLight.cutOff", glm::cos(glm::radians(7.0f)));
 	shader.setFloat("spotLight.outerCutOff", glm::cos(glm::radians(10.0f)));
 }
-
 void prog2::desert_factory_horror_biochemical(themeChoices tc)
 {
 	initLastXY();
@@ -327,16 +326,16 @@ void prog2::desert_factory_horror_biochemical(themeChoices tc)
 		*/
 		switch (tc)
 		{
-			case::DESERT:
+			case::themeChoices::DESERT:
 				desert(lightingShader, pointLightPositions, lc);
 				break;
-			case::FACTORY:
+			case::themeChoices::FACTORY:
 				factory(lightingShader, pointLightPositions, lc);
 				break;
-			case::HORROR:
+			case::themeChoices::HORROR:
 				horror(lightingShader, pointLightPositions, lc);
 				break;
-			case::BIOCHEMICAL_LAB:
+			case::themeChoices::BIOCHEMICAL_LAB:
 				biochemical(lightingShader, pointLightPositions, lc);
 				break;
 		}

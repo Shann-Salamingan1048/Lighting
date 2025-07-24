@@ -1,7 +1,7 @@
 #include "progress/prog2.h"
 int main()
 {
-	bool fullscreen = false;
+	bool fullscreen = true;
 	prog2 p2(fullscreen);
 	//p2.colors();
 	//p2.basicLighting();
@@ -22,7 +22,7 @@ int main()
 	//p2.spot();
 	//p2.spot_soft();
 	//p2.multiple_lights();
-	p2.desert_factory_horror_biochemical(themeChoices::BIOCHEMICAL_LAB);
+	p2.desert_factory_horror_biochemical(themeChoices::FACTORY);
 	return 0;
 }
 // 153/523

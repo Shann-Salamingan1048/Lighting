@@ -4,12 +4,14 @@
 #include "../frameRate.h"
 #include "../Shader.h"
 #include "../Texture.h"
-enum themeChoices
+enum class themeChoices // use enum class instead of enum to prevents implicit conversions
+// i.e. enum class Color { Red, Green, Blue };
+//int x = Color::Red; // ERROR (must use static_cast)
 {
-    DESERT = 0,
-    FACTORY = 1,
-    HORROR = 2,
-    BIOCHEMICAL_LAB = 3
+    DESERT,
+    FACTORY,
+    HORROR,
+    BIOCHEMICAL_LAB
 };
 constexpr float theme_Background_color[4][4] =
 {
@@ -86,6 +88,8 @@ public: // practices
     void factory(const Shader& shader, const glm::vec3 pointLightPositions[], const glm::vec3 pointLightColors[]) const;
     void horror(const Shader& shader, const glm::vec3 pointLightPositions[], const glm::vec3 pointLightColors[]) const;
     void biochemical(const Shader& shader, const glm::vec3 pointLightPositions[], const glm::vec3 pointLightColors[]) const;
+
+
 public: // experiments
     void trySpecularMapColored();
 private:
