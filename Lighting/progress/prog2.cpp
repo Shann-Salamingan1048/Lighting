@@ -2334,12 +2334,29 @@ void prog2::simulateRealWorldObjects()
 		lightingShader.setVec3("light.diffuse", 1.0f, 1.0f, 1.0f);
 		lightingShader.setVec3("light.specular", 1.0f, 1.0f, 1.0f);
 
-		glm::vec3 cubeColor{ 0.0f, 0.50980392f, 0.50980392f };
+		glm::vec3 cubeColor{ 0.0f, 0.50980392f, 0.50980392f }; // teal/cyan like color
 		// material properties
-		lightingShader.setVec3("material.ambient", 0.0f, 0.1f, 0.06f); // ambient is the dark color or dark side of one's material
+		// AMBIENT: RGB tint applied to ALL parts of the object (even unlit areas).
+		// Purpose: Fake indirect light (e.g., dark teal shadows).
+		// R: 0.0 (no red in shadows)
+		// G: 0.1 (10% green tint in shadows)
+		// B: 0.06 (6% blue tint in shadows)
+		lightingShader.setVec3("material.ambient", 0.0f, 0.1f, 0.06f); // ambient 
+
 		//lightingShader.setVec3("material.diffuse", 0.0f, 0.50980392f, 0.50980392f); // RGB
+		// DIFFUSE: RGB color of the material under direct light.
+		// Purpose: Base color of the object (e.g., cubeColor = red if 1,0,0).
+		// R: cubeColor.r (red channel)
+		// G: cubeColor.g (green channel)
+		// B: cubeColor.b (blue channel)
 		lightingShader.setVec3("material.diffuse",cubeColor); // diffuse is the RGB
 		//lightingShader.setVec3("material.diffuse", 0.0f, 0.0f, 1.0f);
+
+		// SPECULAR: RGB color of reflective highlights.
+		// Purpose: Shininess color (often light's color, not object's).
+		// R: 0.502 (~50% red in highlights)
+		// G: 0.502 (~50% green in highlights)
+		// B: 0.502 (~50% blue in highlights)
 		lightingShader.setVec3("material.specular", 0.50196078f, 0.50196078f, 0.50196078f); // specular is the bright spot of the light
 		lightingShader.setFloat("material.shininess", 32.0f);
 

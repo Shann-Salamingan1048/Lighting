@@ -77,10 +77,30 @@ public: // practices
     void implementGouraudShading(); // basically a phone shading that is implemented in the vertex shader or .vert
 
     void changeLightSourceColor();
-    void simulateRealWorldObjects(); // diffuse became the rgb value 
+    void simulateRealWorldObjects(); // diffuse became the rgb value. Main Color under the Light
     // ambient is the dark side color 
+    // ambient: even when it is dark there is usually still some light somewhere in the
+    // ambient: world(the moon, a distant light) so objects are almost never completely dark.
     //specular is the bright spot of the light
 
+    // AMBIENT: RGB tint applied to ALL parts of the object (even unlit areas).
+    // Purpose: Fake indirect light (e.g., dark teal shadows).
+    // R: 0.0 (no red in shadows)
+    // G: 0.1 (10% green tint in shadows)
+    // B: 0.06 (6% blue tint in shadows)
+
+
+    // DIFFUSE: RGB color of the material under direct light.
+    // Purpose: Base color of the object (e.g., cubeColor = red if 1,0,0).
+    // R: cubeColor.r (red channel)
+    // G: cubeColor.g (green channel)
+    // B: cubeColor.b (blue channel)
+
+    // SPECULAR: RGB color of reflective highlights.
+    // Purpose: Shininess color (often light's color, not object's).
+    // R: 0.502 (~50% red in highlights)
+    // G: 0.502 (~50% green in highlights)
+    // B: 0.502 (~50% blue in highlights)
     void Wood_Metal(); // the metal wont shine and wood will shine
     void emissionMap();
 
