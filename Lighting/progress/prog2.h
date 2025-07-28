@@ -167,3 +167,9 @@ private:
     constexpr static float s_nearPlane = 0.1f;
     constexpr static float s_farPlane = 100.0f;
 };
+/*
+    Normalizing a vector keeps its direction perfectly unchanged, ensures the result stays in a meaningful range 
+    (-1 to 1 for dot products), and preserves the correct physical behavior of lighting.
+
+
+*/
