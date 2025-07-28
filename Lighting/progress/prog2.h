@@ -77,7 +77,9 @@ public: // practices
     void implementGouraudShading(); // basically a phone shading that is implemented in the vertex shader or .vert
 
     void changeLightSourceColor();
-    void simulateRealWorldObjects();
+    void simulateRealWorldObjects(); // diffuse became the rgb value 
+    // ambient is the dark side color 
+    //specular is the bright spot of the light
 
     void Wood_Metal(); // the metal wont shine and wood will shine
     void emissionMap();

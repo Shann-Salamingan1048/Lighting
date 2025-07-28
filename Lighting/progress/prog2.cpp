@@ -2336,11 +2336,11 @@ void prog2::simulateRealWorldObjects()
 
 		glm::vec3 cubeColor{ 0.0f, 0.50980392f, 0.50980392f };
 		// material properties
-		lightingShader.setVec3("material.ambient", 0.0f, 0.1f, 0.06f);
+		lightingShader.setVec3("material.ambient", 0.0f, 0.1f, 0.06f); // ambient is the dark color or dark side of one's material
 		//lightingShader.setVec3("material.diffuse", 0.0f, 0.50980392f, 0.50980392f); // RGB
-		lightingShader.setVec3("material.diffuse",cubeColor); // RGB
+		lightingShader.setVec3("material.diffuse",cubeColor); // diffuse is the RGB
 		//lightingShader.setVec3("material.diffuse", 0.0f, 0.0f, 1.0f);
-		lightingShader.setVec3("material.specular", 0.50196078f, 0.50196078f, 0.50196078f);
+		lightingShader.setVec3("material.specular", 0.50196078f, 0.50196078f, 0.50196078f); // specular is the bright spot of the light
 		lightingShader.setFloat("material.shininess", 32.0f);
 
 		// view/projection transformations

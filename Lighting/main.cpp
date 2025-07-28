@@ -11,7 +11,7 @@ int main()
 	//p2.implementGouraudShading();
 	//p2.materials();
 	//p2.changeLightSourceColor(); // still has issues in light source. for example the color of the light is green then the cube object is green
-	//p2.simulateRealWorldObjects();
+    p2.simulateRealWorldObjects();
 	//p2.lighting_maps();
 	//p2.specular_maps();
 	//p2.Wood_Metal();
@@ -22,7 +22,8 @@ int main()
 	//p2.spot();
 	//p2.spot_soft();
 	//p2.multiple_lights();
-	p2.desert_factory_horror_biochemical(themeChoices::FACTORY);
+	//p2.desert_factory_horror_biochemical(themeChoices::BIOCHEMICAL_LAB);
+
 	return 0;
 }
 // 153/523
